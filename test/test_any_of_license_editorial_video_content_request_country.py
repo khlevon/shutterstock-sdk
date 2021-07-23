@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.any_of_license_editorial_video_content_request_country import AnyOfLicenseEditorialVideoContentRequestCountry  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.any_of_license_editorial_video_content_request_country import AnyOfLicenseEditorialVideoContentRequestCountry  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestAnyOfLicenseEditorialVideoContentRequestCountry(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAnyOfLicenseEditorialVideoContentRequestCountry(unittest.TestCase):
     def testAnyOfLicenseEditorialVideoContentRequestCountry(self):
         """Test AnyOfLicenseEditorialVideoContentRequestCountry"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.any_of_license_editorial_video_content_request_country.AnyOfLicenseEditorialVideoContentRequestCountry()  # noqa: E501
+        # model = shutterstock_sdk.models.any_of_license_editorial_video_content_request_country.AnyOfLicenseEditorialVideoContentRequestCountry()  # noqa: E501
         pass
 
 

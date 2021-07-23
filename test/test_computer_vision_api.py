@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.computer_vision_api import ComputerVisionApi  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.api.computer_vision_api import ComputerVisionApi  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestComputerVisionApi(unittest.TestCase):

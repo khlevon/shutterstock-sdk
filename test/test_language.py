@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.language import Language  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.language import Language  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestLanguage(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLanguage(unittest.TestCase):
     def testLanguage(self):
         """Test Language"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.language.Language()  # noqa: E501
+        # model = shutterstock_sdk.models.language.Language()  # noqa: E501
         pass
 
 

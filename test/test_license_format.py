@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.license_format import LicenseFormat  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.license_format import LicenseFormat  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestLicenseFormat(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLicenseFormat(unittest.TestCase):
     def testLicenseFormat(self):
         """Test LicenseFormat"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.license_format.LicenseFormat()  # noqa: E501
+        # model = shutterstock_sdk.models.license_format.LicenseFormat()  # noqa: E501
         pass
 
 

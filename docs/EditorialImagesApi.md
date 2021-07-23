@@ -1,4 +1,4 @@
-# swagger_client.EditorialImagesApi
+# shutterstock_sdk.EditorialImagesApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -33,19 +33,19 @@ Deprecated; use `GET /v2/editorial/images/categories` instead. This endpoint lis
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 
 try:
     # (Deprecated) List editorial categories
@@ -84,19 +84,19 @@ This endpoint shows information about an editorial image, including a URL to a p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial ID
 country = 'country_example' # str | Returns only if the content is available for distribution in a certain country
 
@@ -141,19 +141,19 @@ Deprecated; use `GET /v2/editorial/images/{id}` instead to show information abou
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial ID
 country = 'country_example' # str | Returns only if the content is available for distribution in a certain country
 
@@ -198,16 +198,16 @@ This endpoint lists existing editorial image licenses.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 image_id = 'image_id_example' # str | Show licenses for the specified editorial image ID (optional)
 license = 'license_example' # str | Show editorial images that are available with the specified license name (optional)
 page = 1 # int | Page number (optional) (default to 1)
@@ -262,19 +262,19 @@ Get editorial livefeed
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial livefeed ID; must be an URI encoded string
 country = 'country_example' # str | Returns only if the livefeed is available for distribution in a certain country
 
@@ -317,19 +317,19 @@ Get editorial livefeed items
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial livefeed ID; must be an URI encoded string
 country = 'country_example' # str | Returns only if the livefeed items are available for distribution in a certain country
 
@@ -372,19 +372,19 @@ Get editorial livefeed list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 country = 'country_example' # str | Returns only livefeeds that are available for distribution in a certain country
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
@@ -431,19 +431,19 @@ Deprecated: use `GET /v2/editorial/images/livefeeds/{id}` instead to get an edit
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial livefeed ID; must be an URI encoded string
 country = 'country_example' # str | Returns only if the livefeed is available for distribution in a certain country
 
@@ -488,19 +488,19 @@ Deprecated; use `GET /v2/editorial/images/livefeeds/{id}/items` instead to get e
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial livefeed ID; must be an URI encoded string
 country = 'country_example' # str | Returns only if the livefeed items are available for distribution in a certain country
 
@@ -545,19 +545,19 @@ Deprecated; use `GET /v2/editorial/images/livefeeds` instead to get a list of ed
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 country = 'country_example' # str | Returns only livefeeds that are available for distribution in a certain country
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
@@ -604,19 +604,19 @@ This endpoint lists editorial images that have been updated in the specified tim
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 type = 'type_example' # str | Specify `addition` to return only images that were added or `edit` to return only images that were edited or deleted
 date_updated_start = '2013-10-20T19:20:30+01:00' # datetime | Show images images added, edited, or deleted after the specified date. Acceptable range is 1970-01-01T00:00:01 to 2038-01-19T00:00:00.
 date_updated_end = '2013-10-20T19:20:30+01:00' # datetime | Show images images added, edited, or deleted before the specified date. Acceptable range is 1970-01-01T00:00:01 to 2038-01-19T00:00:00.
@@ -677,19 +677,19 @@ Deprecated; use `GET /v2/editorial/images/updated` instead to get recently updat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 type = 'type_example' # str | Specify `addition` to return only images that were added or `edit` to return only images that were edited or deleted
 date_updated_start = '2013-10-20T19:20:30+01:00' # datetime | Show images images added, edited, or deleted after the specified date. Acceptable range is 1970-01-01T00:00:01 to 2038-01-19T00:00:00.
 date_updated_end = '2013-10-20T19:20:30+01:00' # datetime | Show images images added, edited, or deleted before the specified date. Acceptable range is 1970-01-01T00:00:01 to 2038-01-19T00:00:00.
@@ -750,17 +750,17 @@ Deprecated; use `POST /v2/editorial/images/licenses` instead to get licenses for
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LicenseEditorialContentRequest() # LicenseEditorialContentRequest | License editorial content
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.LicenseEditorialContentRequest() # LicenseEditorialContentRequest | License editorial content
 
 try:
     # (Deprecated) License editorial content
@@ -802,17 +802,17 @@ This endpoint gets licenses for one or more editorial images. You must specify t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LicenseEditorialContentRequest() # LicenseEditorialContentRequest | License editorial content
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.LicenseEditorialContentRequest() # LicenseEditorialContentRequest | License editorial content
 
 try:
     # License editorial content
@@ -854,19 +854,19 @@ This endpoint lists the categories that editorial images can belong to, which ar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 
 try:
     # List editorial categories
@@ -905,19 +905,19 @@ Deprecated; use `GET /v2/editorial/images/search` instead to search for editoria
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 country = 'country_example' # str | Show only editorial content that is available for distribution in a certain country
 query = 'query_example' # str | One or more search terms separated by spaces (optional)
 sort = 'relevant' # str | Sort by (optional) (default to relevant)
@@ -976,19 +976,19 @@ This endpoint searches for editorial images. If you specify more than one search
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialImagesApi(shutterstock_sdk.ApiClient(configuration))
 country = 'country_example' # str | Show only editorial content that is available for distribution in a certain country
 query = 'query_example' # str | One or more search terms separated by spaces (optional)
 sort = 'relevant' # str | Sort by (optional) (default to relevant)

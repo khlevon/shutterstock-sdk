@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.cookie import Cookie  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.cookie import Cookie  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestCookie(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCookie(unittest.TestCase):
     def testCookie(self):
         """Test Cookie"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.cookie.Cookie()  # noqa: E501
+        # model = shutterstock_sdk.models.cookie.Cookie()  # noqa: E501
         pass
 
 

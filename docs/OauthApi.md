@@ -1,4 +1,4 @@
-# swagger_client.OauthApi
+# shutterstock_sdk.OauthApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -18,12 +18,12 @@ This endpoint returns a redirect URI (in the 'Location' header) that the custome
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OauthApi()
+api_instance = shutterstock_sdk.OauthApi()
 client_id = 'client_id_example' # str | Client ID (Consumer Key) of your application
 redirect_uri = 'redirect_uri_example' # str | The callback URI to send the request to after authorization; must use a host name that is registered with your application
 response_type = 'response_type_example' # str | Type of temporary authorization code that will be used to generate an access code; the only valid value is 'code'
@@ -75,12 +75,12 @@ This endpoint returns an access token for the specified user and with the specif
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OauthApi()
+api_instance = shutterstock_sdk.OauthApi()
 client_id = 'client_id_example' # str |  (optional)
 client_secret = 'client_secret_example' # str |  (optional)
 code = 'code_example' # str |  (optional)

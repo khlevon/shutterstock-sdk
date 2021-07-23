@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.computer_vision_image_create_response import ComputerVisionImageCreateResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.computer_vision_image_create_response import ComputerVisionImageCreateResponse  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestComputerVisionImageCreateResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestComputerVisionImageCreateResponse(unittest.TestCase):
     def testComputerVisionImageCreateResponse(self):
         """Test ComputerVisionImageCreateResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.computer_vision_image_create_response.ComputerVisionImageCreateResponse()  # noqa: E501
+        # model = shutterstock_sdk.models.computer_vision_image_create_response.ComputerVisionImageCreateResponse()  # noqa: E501
         pass
 
 

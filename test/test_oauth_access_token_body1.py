@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.oauth_access_token_body1 import OauthAccessTokenBody1  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.oauth_access_token_body1 import OauthAccessTokenBody1  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestOauthAccessTokenBody1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOauthAccessTokenBody1(unittest.TestCase):
     def testOauthAccessTokenBody1(self):
         """Test OauthAccessTokenBody1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.oauth_access_token_body1.OauthAccessTokenBody1()  # noqa: E501
+        # model = shutterstock_sdk.models.oauth_access_token_body1.OauthAccessTokenBody1()  # noqa: E501
         pass
 
 

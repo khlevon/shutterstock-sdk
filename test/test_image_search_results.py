@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.image_search_results import ImageSearchResults  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.image_search_results import ImageSearchResults  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestImageSearchResults(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestImageSearchResults(unittest.TestCase):
     def testImageSearchResults(self):
         """Test ImageSearchResults"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.image_search_results.ImageSearchResults()  # noqa: E501
+        # model = shutterstock_sdk.models.image_search_results.ImageSearchResults()  # noqa: E501
         pass
 
 

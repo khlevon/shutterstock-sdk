@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.license_image_result_data_list import LicenseImageResultDataList  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.license_image_result_data_list import LicenseImageResultDataList  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestLicenseImageResultDataList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLicenseImageResultDataList(unittest.TestCase):
     def testLicenseImageResultDataList(self):
         """Test LicenseImageResultDataList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.license_image_result_data_list.LicenseImageResultDataList()  # noqa: E501
+        # model = shutterstock_sdk.models.license_image_result_data_list.LicenseImageResultDataList()  # noqa: E501
         pass
 
 

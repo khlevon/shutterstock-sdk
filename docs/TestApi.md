@@ -1,4 +1,4 @@
-# swagger_client.TestApi
+# shutterstock_sdk.TestApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -16,12 +16,12 @@ Echo text
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TestApi()
+api_instance = shutterstock_sdk.TestApi()
 text = 'ok' # str | Text to echo (optional) (default to ok)
 
 try:
@@ -62,12 +62,12 @@ Validate input
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TestApi()
+api_instance = shutterstock_sdk.TestApi()
 id = 56 # int | Integer ID
 tag = ['tag_example'] # list[str] | List of tags (optional)
 user_agent = 'user_agent_example' # str | User agent (optional)

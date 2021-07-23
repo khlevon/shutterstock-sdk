@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.audio_render_timeline_span_region_end_type import AudioRenderTimelineSpanRegionEndType  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.audio_render_timeline_span_region_end_type import AudioRenderTimelineSpanRegionEndType  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestAudioRenderTimelineSpanRegionEndType(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAudioRenderTimelineSpanRegionEndType(unittest.TestCase):
     def testAudioRenderTimelineSpanRegionEndType(self):
         """Test AudioRenderTimelineSpanRegionEndType"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.audio_render_timeline_span_region_end_type.AudioRenderTimelineSpanRegionEndType()  # noqa: E501
+        # model = shutterstock_sdk.models.audio_render_timeline_span_region_end_type.AudioRenderTimelineSpanRegionEndType()  # noqa: E501
         pass
 
 

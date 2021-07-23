@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.model import Model  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.model import Model  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestModel(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestModel(unittest.TestCase):
     def testModel(self):
         """Test Model"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.model.Model()  # noqa: E501
+        # model = shutterstock_sdk.models.model.Model()  # noqa: E501
         pass
 
 

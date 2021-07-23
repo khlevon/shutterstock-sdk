@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.urls import Urls  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.urls import Urls  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestUrls(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUrls(unittest.TestCase):
     def testUrls(self):
         """Test Urls"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.urls.Urls()  # noqa: E501
+        # model = shutterstock_sdk.models.urls.Urls()  # noqa: E501
         pass
 
 

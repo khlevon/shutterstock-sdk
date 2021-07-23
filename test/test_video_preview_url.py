@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.video_preview_url import VideoPreviewUrl  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.video_preview_url import VideoPreviewUrl  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestVideoPreviewUrl(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestVideoPreviewUrl(unittest.TestCase):
     def testVideoPreviewUrl(self):
         """Test VideoPreviewUrl"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.video_preview_url.VideoPreviewUrl()  # noqa: E501
+        # model = shutterstock_sdk.models.video_preview_url.VideoPreviewUrl()  # noqa: E501
         pass
 
 

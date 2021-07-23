@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.one_ofasset_id import OneOfassetId  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.one_ofasset_id import OneOfassetId  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestOneOfassetId(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOneOfassetId(unittest.TestCase):
     def testOneOfassetId(self):
         """Test OneOfassetId"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.one_ofasset_id.OneOfassetId()  # noqa: E501
+        # model = shutterstock_sdk.models.one_ofasset_id.OneOfassetId()  # noqa: E501
         pass
 
 

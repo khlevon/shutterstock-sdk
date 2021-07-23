@@ -1,4 +1,4 @@
-# swagger_client.UsersApi
+# shutterstock_sdk.UsersApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -17,16 +17,16 @@ Get access token details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.UsersApi(shutterstock_sdk.ApiClient(configuration))
 
 try:
     # Get access token details
@@ -63,16 +63,16 @@ Get user details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.UsersApi(shutterstock_sdk.ApiClient(configuration))
 
 try:
     # Get user details
@@ -109,16 +109,16 @@ List user subscriptions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.UsersApi(shutterstock_sdk.ApiClient(configuration))
 
 try:
     # List user subscriptions

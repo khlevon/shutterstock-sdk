@@ -1,4 +1,4 @@
-# swagger_client.ComputerVisionApi
+# shutterstock_sdk.ComputerVisionApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -21,20 +21,20 @@ This endpoint returns a list of suggested keywords for a media item that you spe
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ComputerVisionApi(swagger_client.ApiClient(configuration))
-asset_id = swagger_client.AssetId() # AssetId | The asset ID or upload ID to suggest keywords for
+api_instance = shutterstock_sdk.ComputerVisionApi(shutterstock_sdk.ApiClient(configuration))
+asset_id = shutterstock_sdk.AssetId() # AssetId | The asset ID or upload ID to suggest keywords for
 
 try:
     # List suggested keywords
@@ -76,23 +76,23 @@ This endpoint returns images that are visually similar to an image that you spec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ComputerVisionApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ComputerVisionApi(shutterstock_sdk.ApiClient(configuration))
 asset_id = 'asset_id_example' # str | The asset ID or upload ID to find similar images for
 license = ['license_example'] # list[str] | Show only images with the specified license (optional)
 safe = true # bool | Enable or disable safe search (optional) (default to true)
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
 view = 'minimal' # str | Amount of detail to render in the response (optional) (default to minimal)
@@ -143,23 +143,23 @@ This endpoint returns videos that are visually similar to an image that you spec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ComputerVisionApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ComputerVisionApi(shutterstock_sdk.ApiClient(configuration))
 asset_id = 'asset_id_example' # str | The asset ID or upload ID to find similar videos for
 license = ['license_example'] # list[str] | Show only videos with the specified license (optional)
 safe = true # bool | Enable or disable safe search (optional) (default to true)
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
 view = 'minimal' # str | Amount of detail to render in the response (optional) (default to minimal)
@@ -210,20 +210,20 @@ Deprecated; use `POST /v2/cv/images` instead. This endpoint uploads an image for
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ComputerVisionApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ImageCreateRequest() # ImageCreateRequest | The image data in JPEG or PNG format
+api_instance = shutterstock_sdk.ComputerVisionApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.ImageCreateRequest() # ImageCreateRequest | The image data in JPEG or PNG format
 
 try:
     # Upload ephemeral images
@@ -265,20 +265,20 @@ This endpoint uploads an image for reverse image or video search. Images must be
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ComputerVisionApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ImageCreateRequest() # ImageCreateRequest | A Base 64 encoded jpeg or png; images can be no larger than 10mb and can be no larger than 10,000 pixels in width or height
+api_instance = shutterstock_sdk.ComputerVisionApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.ImageCreateRequest() # ImageCreateRequest | A Base 64 encoded jpeg or png; images can be no larger than 10mb and can be no larger than 10,000 pixels in width or height
 
 try:
     # Upload images

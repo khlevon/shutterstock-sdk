@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.download_history_media_details import DownloadHistoryMediaDetails  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.download_history_media_details import DownloadHistoryMediaDetails  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestDownloadHistoryMediaDetails(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDownloadHistoryMediaDetails(unittest.TestCase):
     def testDownloadHistoryMediaDetails(self):
         """Test DownloadHistoryMediaDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.download_history_media_details.DownloadHistoryMediaDetails()  # noqa: E501
+        # model = shutterstock_sdk.models.download_history_media_details.DownloadHistoryMediaDetails()  # noqa: E501
         pass
 
 

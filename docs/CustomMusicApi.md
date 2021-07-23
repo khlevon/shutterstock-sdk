@@ -1,4 +1,4 @@
-# swagger_client.CustomMusicApi
+# shutterstock_sdk.CustomMusicApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -20,20 +20,20 @@ This endpoint creates rendered audio from timeline data. It returns a render ID 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomMusicApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreateAudioRendersRequest() # CreateAudioRendersRequest | Parameters for the audio, including the timeline and information about the output file
+api_instance = shutterstock_sdk.CustomMusicApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CreateAudioRendersRequest() # CreateAudioRendersRequest | Parameters for the audio, including the timeline and information about the output file
 
 try:
     # Create rendered audio
@@ -75,19 +75,19 @@ This endpoint shows the status of one or more audio renders, including download 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomMusicApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.CustomMusicApi(shutterstock_sdk.ApiClient(configuration))
 id = ['id_example'] # list[str] | One or more render IDs
 
 try:
@@ -130,19 +130,19 @@ This endpoint lists the descriptors that you can use in the audio regions in an 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomMusicApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.CustomMusicApi(shutterstock_sdk.ApiClient(configuration))
 render_speed_over = 1.2 # float | Show descriptors with an average render speed that is greater than or equal to the specified value (optional)
 band_id = 'band_id_example' # str | Show descriptors that contain the specified band (case-sentsitive) (optional)
 band_name = 'band_name_example' # str | Show descriptors with the specified band name (case-sensitive) (optional)
@@ -209,19 +209,19 @@ This endpoint lists the instruments that you can include in computer audio. If y
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomMusicApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.CustomMusicApi(shutterstock_sdk.ApiClient(configuration))
 id = ['id_example'] # list[str] | Show instruments with the specified ID (optional)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
 page = 1 # int | Page number (optional) (default to 1)

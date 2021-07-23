@@ -1,4 +1,4 @@
-# swagger_client.ContributorsApi
+# shutterstock_sdk.ContributorsApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -21,19 +21,19 @@ This endpoint shows information about a single contributor, including contributo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContributorsApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ContributorsApi(shutterstock_sdk.ApiClient(configuration))
 contributor_id = 'contributor_id_example' # str | Contributor ID
 
 try:
@@ -76,19 +76,19 @@ This endpoint lists the IDs of items in a contributor's collection and the date 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContributorsApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ContributorsApi(shutterstock_sdk.ApiClient(configuration))
 contributor_id = 'contributor_id_example' # str | Contributor ID
 id = 'id_example' # str | Collection ID that belongs to the contributor
 page = 1 # int | Page number (optional) (default to 1)
@@ -139,19 +139,19 @@ This endpoint gets more detailed information about a contributor's collection, i
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContributorsApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ContributorsApi(shutterstock_sdk.ApiClient(configuration))
 contributor_id = 'contributor_id_example' # str | Contributor ID
 id = 'id_example' # str | Collection ID that belongs to the contributor
 
@@ -196,19 +196,19 @@ This endpoint lists collections based on contributor ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContributorsApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ContributorsApi(shutterstock_sdk.ApiClient(configuration))
 contributor_id = 'contributor_id_example' # str | Contributor ID
 sort = 'sort_example' # str | Sort order (optional)
 
@@ -253,19 +253,19 @@ This endpoint lists information about one or more contributors, including contri
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ContributorsApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ContributorsApi(shutterstock_sdk.ApiClient(configuration))
 id = ['id_example'] # list[str] | One or more contributor IDs
 
 try:

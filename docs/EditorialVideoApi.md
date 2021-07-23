@@ -1,4 +1,4 @@
-# swagger_client.EditorialVideoApi
+# shutterstock_sdk.EditorialVideoApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -21,19 +21,19 @@ This endpoint shows information about an editorial image, including a URL to a p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialVideoApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialVideoApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Editorial ID
 country = 'country_example' # str | Returns only if the content is available for distribution in a certain country
 
@@ -78,16 +78,16 @@ This endpoint lists existing editorial video licenses.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialVideoApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialVideoApi(shutterstock_sdk.ApiClient(configuration))
 video_id = 'video_id_example' # str | Show licenses for the specified editorial video ID (optional)
 license = 'license_example' # str | Show editorial videos that are available with the specified license name (optional)
 page = 1 # int | Page number (optional) (default to 1)
@@ -144,17 +144,17 @@ This endpoint gets licenses for one or more editorial videos. You must specify t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialVideoApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LicenseEditorialVideoContentRequest() # LicenseEditorialVideoContentRequest | License editorial video content
+api_instance = shutterstock_sdk.EditorialVideoApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.LicenseEditorialVideoContentRequest() # LicenseEditorialVideoContentRequest | License editorial video content
 
 try:
     # License editorial video content
@@ -196,19 +196,19 @@ This endpoint lists the categories that editorial videos can belong to, which ar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialVideoApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialVideoApi(shutterstock_sdk.ApiClient(configuration))
 
 try:
     # List editorial video categories
@@ -247,19 +247,19 @@ This endpoint searches for editorial videos. If you specify more than one search
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.EditorialVideoApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.EditorialVideoApi(shutterstock_sdk.ApiClient(configuration))
 country = 'country_example' # str | Show only editorial video content that is available for distribution in a certain country
 query = 'query_example' # str | One or more search terms separated by spaces (optional)
 sort = 'relevant' # str | Sort by (optional) (default to relevant)

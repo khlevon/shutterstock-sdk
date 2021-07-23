@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.video_collection_item_data_list import VideoCollectionItemDataList  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.video_collection_item_data_list import VideoCollectionItemDataList  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestVideoCollectionItemDataList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestVideoCollectionItemDataList(unittest.TestCase):
     def testVideoCollectionItemDataList(self):
         """Test VideoCollectionItemDataList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.video_collection_item_data_list.VideoCollectionItemDataList()  # noqa: E501
+        # model = shutterstock_sdk.models.video_collection_item_data_list.VideoCollectionItemDataList()  # noqa: E501
         pass
 
 

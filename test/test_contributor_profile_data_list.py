@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.contributor_profile_data_list import ContributorProfileDataList  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.contributor_profile_data_list import ContributorProfileDataList  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestContributorProfileDataList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestContributorProfileDataList(unittest.TestCase):
     def testContributorProfileDataList(self):
         """Test ContributorProfileDataList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.contributor_profile_data_list.ContributorProfileDataList()  # noqa: E501
+        # model = shutterstock_sdk.models.contributor_profile_data_list.ContributorProfileDataList()  # noqa: E501
         pass
 
 

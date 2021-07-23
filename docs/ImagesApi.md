@@ -1,4 +1,4 @@
-# swagger_client.ImagesApi
+# shutterstock_sdk.ImagesApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -39,17 +39,17 @@ This endpoint adds one or more images to a collection by image IDs.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CollectionItemRequest() # CollectionItemRequest | Array of image IDs to add to the collection
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CollectionItemRequest() # CollectionItemRequest | Array of image IDs to add to the collection
 id = 'id_example' # str | Collection ID
 
 try:
@@ -92,17 +92,17 @@ This endpoint creates one or more image collections (lightboxes). To add images 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CollectionCreateRequest() # CollectionCreateRequest | The names of the new collections
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CollectionCreateRequest() # CollectionCreateRequest | The names of the new collections
 
 try:
     # Create image collections
@@ -144,16 +144,16 @@ This endpoint deletes an image collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 
 try:
@@ -195,16 +195,16 @@ This endpoint removes one or more images from a collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 item_id = ['item_id_example'] # list[str] | One or more image IDs to remove from the collection (optional)
 
@@ -248,17 +248,17 @@ This endpoint redownloads images that you have already received a license for.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RedownloadImage() # RedownloadImage | Information about the images to redownload
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.RedownloadImage() # RedownloadImage | Information about the images to redownload
 id = 'id_example' # str | License ID
 
 try:
@@ -302,19 +302,19 @@ This endpoint gets more detailed information about a featured collection, includ
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 embed = 'embed_example' # str | Which sharing information to include in the response, such as a URL to the collection (optional)
 asset_hint = '1x' # str | Cover image size (optional) (default to 1x)
@@ -361,19 +361,19 @@ This endpoint lists the IDs of images in a featured collection and the date that
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 100 # int | Number of results per page (optional) (default to 100)
@@ -420,19 +420,19 @@ This endpoint lists featured collections of specific types and a name and cover 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 embed = 'embed_example' # str | Which sharing information to include in the response, such as a URL to the collection (optional)
 type = ['type_example'] # list[str] | The types of collections to return (optional)
 asset_hint = '1x' # str | Cover image size (optional) (default to 1x)
@@ -479,21 +479,21 @@ This endpoint shows information about an image, including a URL to a preview ima
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Image ID
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 view = 'full' # str | Amount of detail to render in the response (optional) (default to full)
 
 try:
@@ -538,16 +538,16 @@ This endpoint gets more detailed information about a collection, including its c
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 embed = ['embed_example'] # list[str] | Which sharing information to include in the response, such as a URL to the collection (optional)
 share_code = 'share_code_example' # str | Code to retrieve a shared collection (optional)
@@ -594,16 +594,16 @@ This endpoint lists the IDs of images in a collection and the date that each was
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 share_code = 'share_code_example' # str | Code to retrieve the contents of a shared collection (optional)
 page = 1 # int | Page number (optional) (default to 1)
@@ -652,16 +652,16 @@ This endpoint lists your collections of images and their basic attributes.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 embed = ['embed_example'] # list[str] | Which sharing information to include in the response, such as a URL to the collection (optional)
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 100 # int | Number of results per page (optional) (default to 100)
@@ -708,20 +708,20 @@ This endpoint returns up to 10 important keywords from a block of plain text.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SearchEntitiesRequest() # SearchEntitiesRequest | Plain text to extract keywords from
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.SearchEntitiesRequest() # SearchEntitiesRequest | Plain text to extract keywords from
 
 try:
     # Get keywords from text
@@ -763,16 +763,16 @@ This endpoint lists existing licenses.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 image_id = 'image_id_example' # str | Show licenses for the specified image ID (optional)
 license = 'license_example' # str | Show images that are available with the specified license, such as `standard` or `enhanced`; prepending a `-` sign excludes results from that license (optional)
 page = 1 # int | Page number (optional) (default to 1)
@@ -829,19 +829,19 @@ This endpoint lists information about one or more images, including the availabl
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = ['id_example'] # list[str] | One or more image IDs
 view = 'minimal' # str | Amount of detail to render in the response (optional) (default to minimal)
 
@@ -886,19 +886,19 @@ This endpoint returns images that customers put in the same collection as the sp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = ['id_example'] # list[str] | Image IDs
 max_items = 20 # int | Maximum number of results returned in the response (optional) (default to 20)
 safe = true # bool | Restrict results to safe images (optional) (default to true)
@@ -945,19 +945,19 @@ This endpoint provides autocomplete suggestions for partial search terms.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 query = 'query_example' # str | Search term for which you want keyword suggestions
 limit = 10 # int | Limit the number of suggestions (optional) (default to 10)
 
@@ -1002,21 +1002,21 @@ This endpoint returns images that are visually similar to an image that you spec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Image ID
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
 view = 'minimal' # str | Amount of detail to render in the response (optional) (default to minimal)
@@ -1065,19 +1065,19 @@ This endpoint lists images that have been updated in the specified time period t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 type = ['type_example'] # list[str] | Show images that were added, deleted, or edited; by default, the endpoint returns images that were updated in any of these ways (optional)
 start_date = '2013-10-20' # date | Show images updated on or after the specified date (optional)
 end_date = '2013-10-20' # date | Show images updated before the specified date (optional)
@@ -1132,17 +1132,17 @@ This endpoint gets licenses for one or more images. You must specify the image I
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LicenseImageRequest() # LicenseImageRequest | List of images to request licenses for and information about each license transaction; these values override the defaults in the query parameters
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.LicenseImageRequest() # LicenseImageRequest | List of images to request licenses for and information about each license transaction; these values override the defaults in the query parameters
 subscription_id = 'subscription_id_example' # str | Subscription ID to use to license the image (optional)
 format = 'jpg' # str | Image format (optional) (default to jpg)
 size = 'huge' # str | Image size (optional) (default to huge)
@@ -1192,20 +1192,20 @@ This endpoint lists the categories (Shutterstock-assigned genres) that images ca
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 
 try:
     # List image categories
@@ -1247,17 +1247,17 @@ This endpoint sets a new name for an image collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CollectionUpdateRequest() # CollectionUpdateRequest | The new name for the collection
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CollectionUpdateRequest() # CollectionUpdateRequest | The new name for the collection
 id = 'id_example' # str | Collection ID
 
 try:
@@ -1300,19 +1300,19 @@ This endpoint searches for images. If you specify more than one search parameter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ImagesApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.ImagesApi(shutterstock_sdk.ApiClient(configuration))
 added_date = '2013-10-20' # date | Show images added on the specified date (optional)
 added_date_start = '2013-10-20' # date | Show images added on or after the specified date (optional)
 aspect_ratio_min = 1.2 # float | Show images with the specified aspect ratio or higher, using a positive decimal of the width divided by the height, such as 1.7778 for a 16:9 image (optional)
@@ -1322,14 +1322,14 @@ added_date_end = '2013-10-20' # date | Show images added before the specified da
 category = 'category_example' # str | Show images with the specified Shutterstock-defined category; specify a category name or ID (optional)
 color = 'color_example' # str | Specify either a hexadecimal color in the format '4F21EA' or 'grayscale'; the API returns images that use similar colors (optional)
 contributor = ['contributor_example'] # list[str] | Show images with the specified contributor names or IDs, allows multiple (optional)
-contributor_country = swagger_client.ContributorCountry() # ContributorCountry | Show images from contributors in one or more specified countries, or start with NOT to exclude a country from the search (optional)
+contributor_country = shutterstock_sdk.ContributorCountry() # ContributorCountry | Show images from contributors in one or more specified countries, or start with NOT to exclude a country from the search (optional)
 fields = 'fields_example' # str | Fields to display in the response; see the documentation for the fields parameter in the overview section (optional)
 height = 56 # int | (Deprecated; use height_from and height_to instead) Show images with the specified height (optional)
 height_from = 56 # int | Show images with the specified height or larger, in pixels (optional)
 height_to = 56 # int | Show images with the specified height or smaller, in pixels (optional)
 image_type = ['image_type_example'] # list[str] | Show images of the specified type (optional)
 keyword_safe_search = true # bool | Hide results with potentially unsafe keywords (optional) (default to true)
-language = swagger_client.Language() # Language | Set query and result language (uses Accept-Language header if not set) (optional)
+language = shutterstock_sdk.Language() # Language | Set query and result language (uses Accept-Language header if not set) (optional)
 license = ['license_example'] # list[str] | Show only images with the specified license (optional)
 model = ['model_example'] # list[str] | Show image results with the specified model IDs (optional)
 orientation = 'orientation_example' # str | Show image results with horizontal or vertical orientation (optional)
@@ -1341,7 +1341,7 @@ people_ethnicity = ['people_ethnicity_example'] # list[str] | Show images with p
 people_gender = 'people_gender_example' # str | Show images with people of the specified gender (optional)
 people_number = 56 # int | Show images with the specified number of people (optional)
 query = 'query_example' # str | One or more search terms separated by spaces; you can use NOT to filter out images that match a term (optional)
-region = swagger_client.Region() # Region | Raise or lower search result rankings based on the result's relevance to a specified region; you can provide a country code or an IP address from which the API infers a country (optional)
+region = shutterstock_sdk.Region() # Region | Raise or lower search result rankings based on the result's relevance to a specified region; you can provide a country code or an IP address from which the API infers a country (optional)
 safe = true # bool | Enable or disable safe search (optional) (default to true)
 sort = 'popular' # str | Sort by (optional) (default to popular)
 spellcheck_query = true # bool | Spellcheck the search query and return results on suggested spellings (optional) (default to true)

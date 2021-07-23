@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_audio_renders_request import CreateAudioRendersRequest  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.create_audio_renders_request import CreateAudioRendersRequest  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestCreateAudioRendersRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCreateAudioRendersRequest(unittest.TestCase):
     def testCreateAudioRendersRequest(self):
         """Test CreateAudioRendersRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_audio_renders_request.CreateAudioRendersRequest()  # noqa: E501
+        # model = shutterstock_sdk.models.create_audio_renders_request.CreateAudioRendersRequest()  # noqa: E501
         pass
 
 

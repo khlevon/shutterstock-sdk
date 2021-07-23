@@ -1,4 +1,4 @@
-# swagger_client.VideosApi
+# shutterstock_sdk.VideosApi
 
 All URIs are relative to *https://api.shutterstock.com*
 
@@ -37,17 +37,17 @@ This endpoint adds one or more videos to a collection by video IDs.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CollectionItemRequest() # CollectionItemRequest | Array of video IDs to add to the collection
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CollectionItemRequest() # CollectionItemRequest | Array of video IDs to add to the collection
 id = 'id_example' # str | The ID of the collection to which items should be added
 
 try:
@@ -90,17 +90,17 @@ This endpoint creates one or more collections (clipboxes). To add videos to coll
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CollectionCreateRequest() # CollectionCreateRequest | Collection metadata
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CollectionCreateRequest() # CollectionCreateRequest | Collection metadata
 
 try:
     # Create video collections
@@ -142,16 +142,16 @@ This endpoint deletes a collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | The ID of the collection to delete
 
 try:
@@ -193,16 +193,16 @@ This endpoint removes one or more videos from a collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | The ID of the Collection from which items will be deleted
 item_id = ['item_id_example'] # list[str] | One or more video IDs to remove from the collection (optional)
 
@@ -246,17 +246,17 @@ This endpoint redownloads videos that you have already received a license for.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
-body = swagger_client.RedownloadVideo() # RedownloadVideo | Information about the videos to redownload
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.RedownloadVideo() # RedownloadVideo | Information about the videos to redownload
 id = 'id_example' # str | The license ID of the item to (re)download
 
 try:
@@ -300,19 +300,19 @@ This endpoint gets more detailed information about a featured video collection, 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 embed = 'embed_example' # str | What information to include in the response, such as a URL to the collection (optional)
 
@@ -357,19 +357,19 @@ This endpoint lists the IDs of videos in a featured collection and the date that
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Collection ID
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 100 # int | Number of results per page (optional) (default to 100)
@@ -416,19 +416,19 @@ This endpoint lists featured video collections and a name and cover video for ea
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 embed = 'embed_example' # str | What information to include in the response, such as a URL to the collection (optional)
 
 try:
@@ -471,21 +471,21 @@ This endpoint searches for videos that are similar to a video that you specify.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | The ID of a video for which similar videos should be returned
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 20 # int | Number of results per page (optional) (default to 20)
 view = 'minimal' # str | Amount of detail to render in the response (optional) (default to minimal)
@@ -534,19 +534,19 @@ This endpoint lists videos that have been updated in the specified time period t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 start_date = '2013-10-20' # date | Show videos updated on or after the specified date (optional)
 end_date = '2013-10-20' # date | Show videos updated before the specified date (optional)
 interval = '1 HOUR' # str | Show videos updated in the specified time period, where the time period is an interval (like SQL INTERVAL) such as 1 DAY, 6 HOUR, or 30 MINUTE; the default is 1 HOUR, which shows videos that were updated in the hour preceding the request (optional) (default to 1 HOUR)
@@ -599,21 +599,21 @@ This endpoint shows information about a video, including URLs to previews and th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | Video ID
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 view = 'full' # str | Amount of detail to render in the response (optional) (default to full)
 
 try:
@@ -658,16 +658,16 @@ This endpoint gets more detailed information about a collection, including the t
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | The ID of the collection to return
 
 try:
@@ -710,16 +710,16 @@ This endpoint lists the IDs of videos in a collection and the date that each was
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = 'id_example' # str | The ID of the Collection whose items are to be returned
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 100 # int | Number of results per page (optional) (default to 100)
@@ -768,16 +768,16 @@ This endpoint lists your collections of videos and their basic attributes.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 page = 1 # int | Page number (optional) (default to 1)
 per_page = 100 # int | Number of results per page (optional) (default to 100)
 
@@ -822,16 +822,16 @@ This endpoint lists existing licenses.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 video_id = 'video_id_example' # str | Show licenses for the specified video ID (optional)
 license = 'license_example' # str | Show videos that are available with the specified license, such as `standard` or `enhanced`; prepending a `-` sign excludes results from that license (optional)
 page = 1 # int | Page number (optional) (default to 1)
@@ -888,19 +888,19 @@ This endpoint lists information about one or more videos, including the aspect r
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 id = ['id_example'] # list[str] | One or more video IDs
 view = 'minimal' # str | Amount of detail to render in the response (optional) (default to minimal)
 
@@ -945,19 +945,19 @@ This endpoint provides autocomplete suggestions for partial search terms.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 query = 'query_example' # str | Search term for which you want keyword suggestions
 limit = 10 # int | Limit the number of the suggestions (optional) (default to 10)
 
@@ -1002,17 +1002,17 @@ This endpoint gets licenses for one or more videos. You must specify the video I
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LicenseVideoRequest() # LicenseVideoRequest | List of videos to request licenses for and information about each license transaction; these values override the defaults in the query parameters
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.LicenseVideoRequest() # LicenseVideoRequest | List of videos to request licenses for and information about each license transaction; these values override the defaults in the query parameters
 subscription_id = 'subscription_id_example' # str | The subscription ID to use for licensing (optional)
 size = 'web' # str | The size of the video to license (optional) (default to web)
 search_id = 'search_id_example' # str | The Search ID that led to this licensing event (optional)
@@ -1060,20 +1060,20 @@ This endpoint lists the categories (Shutterstock-assigned genres) that videos ca
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
-language = swagger_client.Language() # Language | Language for the keywords and categories in the response (optional)
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
+language = shutterstock_sdk.Language() # Language | Language for the keywords and categories in the response (optional)
 
 try:
     # List video categories
@@ -1115,17 +1115,17 @@ This endpoint sets a new name for a collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CollectionUpdateRequest() # CollectionUpdateRequest | The new name for the collection
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
+body = shutterstock_sdk.CollectionUpdateRequest() # CollectionUpdateRequest | The new name for the collection
 id = 'id_example' # str | The ID of the collection to rename
 
 try:
@@ -1168,19 +1168,19 @@ This endpoint searches for videos. If you specify more than one search parameter
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.rest import ApiException
 from pprint import pprint
 # Configure HTTP basic authorization: basic
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 # Configure OAuth2 access token for authorization: customer_accessCode
-configuration = swagger_client.Configuration()
+configuration = shutterstock_sdk.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.VideosApi(swagger_client.ApiClient(configuration))
+api_instance = shutterstock_sdk.VideosApi(shutterstock_sdk.ApiClient(configuration))
 added_date = '2013-10-20' # date | Show videos added on the specified date (optional)
 added_date_start = '2013-10-20' # date | Show videos added on or after the specified date (optional)
 added_date_end = '2013-10-20' # date | Show videos added before the specified date (optional)
@@ -1195,7 +1195,7 @@ fps = 1.2 # float | (Deprecated; use fps_from and fps_to instead) Show videos wi
 fps_from = 1.2 # float | Show videos with the specified frames per second or more (optional)
 fps_to = 1.2 # float | Show videos with the specified frames per second or fewer (optional)
 keyword_safe_search = true # bool | Hide results with potentially unsafe keywords (optional) (default to true)
-language = swagger_client.Language() # Language | Set query and result language (uses Accept-Language header if not set) (optional)
+language = shutterstock_sdk.Language() # Language | Set query and result language (uses Accept-Language header if not set) (optional)
 license = ['license_example'] # list[str] | Show only videos with the specified license or licenses (optional)
 model = ['model_example'] # list[str] | Show videos with each of the specified models (optional)
 page = 1 # int | Page number (optional) (default to 1)

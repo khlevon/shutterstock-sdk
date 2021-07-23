@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.recommendation_data_list import RecommendationDataList  # noqa: E501
-from swagger_client.rest import ApiException
+import shutterstock_sdk
+from shutterstock_sdk.models.recommendation_data_list import RecommendationDataList  # noqa: E501
+from shutterstock_sdk.rest import ApiException
 
 
 class TestRecommendationDataList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRecommendationDataList(unittest.TestCase):
     def testRecommendationDataList(self):
         """Test RecommendationDataList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.recommendation_data_list.RecommendationDataList()  # noqa: E501
+        # model = shutterstock_sdk.models.recommendation_data_list.RecommendationDataList()  # noqa: E501
         pass
 
 
